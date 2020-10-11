@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+.background {
+  background-image: url("/game-of-life/src/images/unnamed.gif");
+  width: 100%;
+  height: 100%
+}
+
+
+
