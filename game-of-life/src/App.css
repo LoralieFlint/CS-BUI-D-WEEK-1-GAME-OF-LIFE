@@ -1,12 +1,48 @@
 body {
   text-align: center;
   background: url("./images/unnamed.gif");
+  font-family: "Anton", sans-serif;
+
 }
 
 .topListItem {
   margin-top: -20px;
 }
 
+.bottomListItem {
+  margin-bottom: 20px;
+}
 
+.learnMore {
+  background-color: black;
+  color: teal;
+  padding: 7px;
+  border-radius: 15px;
+  border: 1px solid gray;
+  margin-top: 30px;
+  font-weight: 900;
+}
+.learnMore:hover {
+  background-color: white;
+  color: black;
+}
 
-
+.home {
+  background-color: black;
+  color: teal;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin-top: 40px;
+  font-weight: 900;
+  margin-left: -70px;
+  margin-right: 20px;
+}
+.home:hover {
+  background-color: white;
+  color: black;
+}
+.top {
+  display: flex;
+  justify-content: center;
+}
