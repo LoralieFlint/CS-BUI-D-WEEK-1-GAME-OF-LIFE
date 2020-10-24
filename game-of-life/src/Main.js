@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./App.css";
 import styled from "styled-components";
 import Grid from "./components/Grid";
-import Samples from "./components/Samples";
+
 const Title = styled.h1`
   color: green;
   font-weight: 900;

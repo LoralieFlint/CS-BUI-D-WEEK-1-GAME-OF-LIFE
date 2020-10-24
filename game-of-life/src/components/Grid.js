@@ -80,8 +80,6 @@ function Grid({ grid, setGrid, clearGrid }) {
           onClick={() => {
             setGrid(clearGrid());
             setLifes(0);
-
-            // setLifes(set.clear());
           }}
         >
           clear
