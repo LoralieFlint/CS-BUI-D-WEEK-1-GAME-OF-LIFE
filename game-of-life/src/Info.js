@@ -11,7 +11,8 @@ const Rules = styled.h1`
   color: green;
   font-family: "Anton", sans-serif;
   font-weight: 900;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-left: 320px;
 `;
 const Origins = styled.h1`
   color: green;

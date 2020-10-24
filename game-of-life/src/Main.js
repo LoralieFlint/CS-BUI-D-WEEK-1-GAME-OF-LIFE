@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 import styled from "styled-components";
-
+import Grid from "./components/Grid";
+import Samples from "./components/Samples";
 const Title = styled.h1`
   color: green;
   font-weight: 900;
@@ -20,7 +21,21 @@ const List = styled.li`
   font-size: 15px;
 `;
 
+const numRows = 25;
+const numCols = 25;
+
 function Main() {
+  const clearGrid = () => {
+    const rows = [];
+    for (let i = 0; i < numRows; i++) {
+      rows.push(Array.from(Array(numCols), () => 0));
+    }
+    return rows;
+  };
+
+  const [grid, setGrid] = useState(() => {
+    return clearGrid();
+  });
   return (
     <div className="App">
       <Title>Conways Game Of Life</Title>
@@ -36,6 +51,9 @@ function Main() {
       <Link className="learnMore" to="/info">
         Learn More
       </Link>
+      <div >
+        <Grid grid={grid} setGrid={setGrid} clearGrid={clearGrid} />
+      </div>
     </div>
   );
 }

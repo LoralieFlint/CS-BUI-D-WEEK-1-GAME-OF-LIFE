@@ -2,7 +2,6 @@ body {
   text-align: center;
   background: url("./images/unnamed.gif");
   font-family: "Anton", sans-serif;
-
 }
 
 .topListItem {
@@ -20,6 +19,7 @@ body {
   border-radius: 15px;
   border: 1px solid gray;
   margin-top: 30px;
+  margin-bottom: 50px;
   font-weight: 900;
 }
 .learnMore:hover {
@@ -33,7 +33,7 @@ body {
   padding: 7px;
   border-radius: 10px;
   border: 1px solid gray;
-  margin-top: 40px;
+  margin-top: 45px;
   font-weight: 900;
   margin-left: -70px;
   margin-right: 20px;
@@ -44,5 +44,51 @@ body {
 }
 .top {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  height: auto;
+}
+
+.main {
+  display: flex;
+}
+
+.start {
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-direction: column;
+  height: 20px;
+}
+
+.clear {
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-direction: column;
+  height: 20px;
+}
+
+.random {
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-direction: column;
+  height: 20px;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+.child {
+  width: 50%;
+}
+.sample {
+  width: 50%;
+}
+
+.sample {
+  height: 80px;
+  width: 80px;
+}
+
+.buttons {
+  margin: auto;
 }
