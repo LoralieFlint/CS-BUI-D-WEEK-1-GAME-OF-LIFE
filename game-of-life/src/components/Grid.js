@@ -56,7 +56,7 @@ function Grid({ grid, setGrid, clearGrid }) {
       simulation();
       setLifes(lifes++);
     }, 100);
-  }, []);
+  }, [setGrid, lifes]);
   return (
     <>
       <h1 style={{ color: "green" }}>Generation: {lifes}</h1>
